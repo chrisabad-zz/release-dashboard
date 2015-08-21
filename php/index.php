@@ -1,5 +1,8 @@
 <?php
 
+  // possible values for pm: philo, clarev, benh
+  // possible values for team: automation, contacts, emailbuilder, growth
+
   $data = array(
     'title' => 'Product Releases',
     'currentCycle' => array(
@@ -7,56 +10,44 @@
       'endDate' => '2015-09-25',
       'releases' => array(
         array(
-          'description' => 'Improve discoverability of key integrations',
-          'pm' => 'philo',
-          'team' => 'automation',
-          'done' => TRUE
-        ),
-        array(
-          'description' => 'Trigger workflows when importing contacts',
-          'pm' => 'clarev',
-          'team' => 'contacts',
-          'done' => TRUE
-        ),
-        array(
-          'description' => 'Trigger workflows through ad-hoc segments',
+          'description' => 'More flexible master template',
           'pm' => 'benh',
           'team' => 'emailbuilder',
-          'done' => TRUE
+          'done' => FALSE
         ),
         array(
-          'description' => 'Moving the needle',
-          'pm' => 'benh',
+          'description' => 'Campaign Monitor for Wordpress',
+          'pm' => 'mercers',
+          'team' => 'automation',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Reports at a segment level',
+          'pm' => 'clarev',
+          'team' => 'contacts',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Premier plan',
+          'pm' => 'neals',
           'team' => 'growth',
           'done' => FALSE
         ),
         array(
-          'description' => 'Moving the needle',
-          'pm' => 'benh',
+          'description' => 'Reducing the price for subscriber tiers',
+          'pm' => 'neals',
           'team' => 'growth',
           'done' => FALSE
         ),
         array(
-          'description' => 'Moving the needle',
+          'description' => 'GetFeedback integration',
           'pm' => 'benh',
-          'team' => 'growth',
+          'team' => 'emailbuilder',
           'done' => FALSE
         ),
         array(
-          'description' => 'Moving the needle',
-          'pm' => 'benh',
-          'team' => 'growth',
-          'done' => FALSE
-        ),
-        array(
-          'description' => 'Moving the needle',
-          'pm' => 'benh',
-          'team' => 'growth',
-          'done' => FALSE
-        ),
-        array(
-          'description' => 'Moving the needle',
-          'pm' => 'benh',
+          'description' => 'Add new marginal rates for credit purchases',
+          'pm' => 'neals',
           'team' => 'growth',
           'done' => FALSE
         )
@@ -66,16 +57,68 @@
       'heading' => 'FY16 August',
       'releases' => array(
         array(
-          'description' => 'Improve discoverability of key integrations',
+          'description' => 'Font folor control',
           'done' => TRUE
         ),
         array(
-          'description' => 'Trigger workflows when importing contacts',
+          'description' => 'Background color control per layout section',
           'done' => TRUE
         ),
         array(
-          'description' => 'Trigger workflows through ad-hoc segments',
+          'description' => 'Reduced spacing in templates',
           'done' => TRUE
+        ),
+        array(
+          'description' => 'Button color control',
+          'done' => TRUE
+        ),
+        array(
+          'description' => 'Transactional for marketers',
+          'done' => TRUE
+        ),
+        array(
+          'description' => 'Font size control',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Font size control',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Redesign the getting started page',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Background image control per layout section',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Highlight transactional tab',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Font face selection',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Background image control for email background',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Allow users to skip the "send a test" page',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Users exceed their limit',
+          'done' => FALSE
+        ),
+        array(
+          'description' => 'Buying in-app',
+          'done' => FALSE
+        ),
+        array(
+          'description' => '2-step signup process',
+          'done' => FALSE
         )
       )
     ),
@@ -83,13 +126,10 @@
       'heading' => 'FY16 October',
       'releases' => array(
         array(
-          'description' => 'Improve discoverability of key integrations',
+          'description' => 'Export HTML',
         ),
         array(
-          'description' => 'Trigger workflows when importing contacts',
-        ),
-        array(
-          'description' => 'Trigger workflows through ad-hoc segments',
+          'description' => 'Custom code in templates',
         )
       )
     )
