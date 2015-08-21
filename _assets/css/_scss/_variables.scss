@@ -1,0 +1,28 @@
+// Importing fonts
+@font-face {
+  font-family: 'berthold_akzidenz_groteskMdCn';
+  src: url('../fonts/akzidenzgroteskbe-mdcn-webfont.eot');
+  src: url('../fonts/akzidenzgroteskbe-mdcn-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/akzidenzgroteskbe-mdcn-webfont.woff') format('woff'), url('../fonts/akzidenzgroteskbe-mdcn-webfont.ttf') format('truetype'), url('../fonts/akzidenzgroteskbe-mdcn-webfont.svg#berthold_akzidenz_groteskMdCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IdealSans-Book';
+  src: url('../fonts/idealsans-book-pro.eot');
+  src: url('../fonts/idealsans-book-pro.eot?#iefix') format('embedded-opentype'), url('../fonts/idealsans-book-pro.woff') format('woff'), url('../fonts/idealsans-book-pro.ttf') format('truetype'), url('../fonts/idealsans-book-pro.svg#idealsans-book-pro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$color-dark-blue: #2c323c;
+$color-white: #ffffff;
+$color-grey-blue: #5c626b;
+$color-grey-blue-darker: #4f545c;
+$color-green-tick: #32c86e;
+$color-automation: #ffd91a;
+$color-contacts: #32c86e;
+$color-emailbuilder: #19a9e5;
+$color-growth: #a575ec;
+
+$font-heading: 'berthold_akzidenz_groteskMdCn';
+$font-default: 'IdealSans-Book';

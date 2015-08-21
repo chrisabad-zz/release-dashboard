@@ -1,0 +1,18 @@
+.heading {
+  font-family: $font-heading;
+  text-transform: uppercase;
+}
+
+.heading--primary {
+  font-size: 100px;
+  color: $color-white;
+}
+
+.heading--secondary {
+  font-size: 50px;
+  color: $color-grey-blue;
+}
+
+.heading--mb-large {
+  margin-bottom: 0.5em;
+}

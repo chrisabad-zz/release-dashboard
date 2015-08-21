@@ -1,0 +1,15 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $font-default;
+  color: $color-grey-blue;
+  background-color: $color-dark-blue;
+}
+
+.main {
+  max-width: 1720px;
+  margin: 100px auto;
+}

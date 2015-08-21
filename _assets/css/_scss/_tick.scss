@@ -1,0 +1,33 @@
+.tick {
+  border: 2px solid $color-grey-blue;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tick--large {
+  border-width: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.tick--done {
+  background: $color-green-tick;
+  border: none;
+
+  &.tick--large {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/tick.svg) no-repeat 50% 50%;
+      background-size: 15px auto;
+    }
+  }
+}
