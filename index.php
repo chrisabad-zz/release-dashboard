@@ -97,6 +97,7 @@
 
 
   // Returns days left to a specific date
+  date_default_timezone_set('Australia/Sydney'); // This appears to be an issue w/ Maverick's PHP
   function days_until($date){
     return (isset($date)) ? floor((strtotime($date) - time())/60/60/24) : FALSE;
   }
