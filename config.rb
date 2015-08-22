@@ -1,3 +1,6 @@
+ENV["TZ"] = "Australia/Sydney"
+
+
 ###
 # Compass
 ###
@@ -62,6 +65,10 @@ helpers do
     if (default == 'complete' and feature_status != 'in progress') or (default == 'in progress' and feature_status == 'complete')
       'tick--done'
     end
+  end
+
+  def days_left(current_release)
+    (Date.parse(current_release.end.to_s) - DateTime.now).to_i
   end
 end
 

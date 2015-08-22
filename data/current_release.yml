@@ -1,4 +1,7 @@
+# Set the status as complete when the feature is complete.
+
 name: FY16 September
+end: 2015-09-25
 
 features:
   -

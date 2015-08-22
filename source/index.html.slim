@@ -34,7 +34,8 @@ html lang="en"
               span class=("tick tick--large #{tick_status(feature.status, 'in progress')}")
       section class="section section--secondary section--days"
         h2 class="heading heading--secondary heading--mb-large" Days left
-        div class="countdown" 15
+        div class="countdown"
+          = days_left(data.current_release)
       section class="section section--secondary"
         h2 class="heading heading--secondary heading--mb-large" Last Release
         ul class="list"
@@ -46,7 +47,7 @@ html lang="en"
       section class="section section--secondary section--progress"
         h2 class="heading heading--secondary heading--mb-large" Progress
         canvas id="progress" class="progress"
-      section class="section section--secondary"
+      section class="section section--secondary next-release"
         h2 class="heading heading--secondary heading--mb-large" Next Release
         ul class="list"
           - data.next_release.features.each do |feature|
