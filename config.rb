@@ -73,9 +73,9 @@ helpers do
     end
   end
 
-  def days_left(current_release)
-    (Date.parse(current_release.end.to_s) - DateTime.now).to_i
-  end
+  # def days_left(current_release)
+  #   (Date.parse(current_release.end.to_s) - DateTime.now).to_i
+  # end
 end
 
 set :css_dir, 'stylesheets'

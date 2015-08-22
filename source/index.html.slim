@@ -33,8 +33,7 @@ html lang="en"
               span class=("tick tick--large #{tick_status(feature.status, 'in progress')}")
       section class="section section--secondary section--days"
         h2 class="heading heading--secondary heading--mb-large" Days left
-        div class="countdown"
-          = days_left(data.current_release)
+        div class="countdown" id="countdown" data-end-date=(data.current_release.end)
       section class="section section--secondary"
         h2 class="heading heading--secondary heading--mb-large" Last Release
         ul class="list"
@@ -56,4 +55,5 @@ html lang="en"
               span class="tick"
 
     = javascript_include_tag "chart.min.js"
+    = javascript_include_tag "date/date"
     = javascript_include_tag "main"
