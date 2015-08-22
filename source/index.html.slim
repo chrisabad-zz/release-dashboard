@@ -1,0 +1,59 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    title Campaign Monitor Product Release Dashboard
+    link rel="stylesheet" hfref="/stylesheets/main.css"
+    = stylesheet_link_tag "main"
+
+  body
+    main class="main"
+      h1 class="heading heading--primary heading--mb-large" Product Releases
+      section class="section section--main"
+        h2 class="heading heading--secondary heading--mb-large"
+          = data.current_release.name
+        ul class="legend"
+          li class="legend__item"
+            span class="avatar avatar--automation avatar--legend"
+            span Automation
+          li class="legend__item"
+            span class="avatar avatar--emailbuilder avatar--legend"
+            span Email Builder
+          li class="legend__item"
+            span class="avatar avatar--contacts avatar--legend"
+            span Contacts
+          li class="legend__item"
+            span class="avatar avatar--growth avatar--legend"
+            span Growth
+        ul class="list"
+          - data.current_release.features.each do |feature|
+            li class="list__item list__item--large list__item--done"
+              span class=("avatar avatar--contacts avatar--#{pm(feature)}")
+              span class="list__item__desc"
+                = feature.name
+              span class=("tick tick--large #{tick_status(feature.status, 'in progress')}")
+      section class="section section--secondary section--days"
+        h2 class="heading heading--secondary heading--mb-large" Days left
+        div class="countdown" 15
+      section class="section section--secondary"
+        h2 class="heading heading--secondary heading--mb-large" Last Release
+        ul class="list"
+          - data.previous_release.features.each do |feature|
+            li class="list__item list__item--done"
+              span class="list__item__desc"
+                = feature.name
+              span class=("tick #{tick_status(feature.status, 'complete')}")
+      section class="section section--secondary section--progress"
+        h2 class="heading heading--secondary heading--mb-large" Progress
+        canvas id="progress" class="progress"
+      section class="section section--secondary"
+        h2 class="heading heading--secondary heading--mb-large" Next Release
+        ul class="list"
+          - data.next_release.features.each do |feature|
+            li class="list__item list__item--done"
+              span class="list__item__desc"
+                = feature.name
+              span class="tick"
+
+    = javascript_include_tag "chart.min.js"
+    = javascript_include_tag "main"

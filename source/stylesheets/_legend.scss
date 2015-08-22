@@ -1,0 +1,15 @@
+.legend {
+  width: 248px
+}
+
+.legend__item {
+  color: $color-white;
+  font-size: 13px;
+  width: 124px;
+  float: left;
+  margin-bottom: 0.8em;
+
+  .avatar {
+    margin-right: 10px;
+  }
+}

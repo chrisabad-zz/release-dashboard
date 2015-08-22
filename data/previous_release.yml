@@ -1,0 +1,39 @@
+name: FY16 August
+
+features:
+  - name: Transactional for marketers
+  - name: Button color control
+  - name: Reduced spacing templates
+  - name: Background color control per layout
+  - name: Font color control
+
+  -
+    name: 2-step signup process
+    status: 'in progress'
+  -
+    name: Buying in-app
+    status: 'in progress'
+  -
+    name: Users exceed their limit
+    status: 'in progress'
+  -
+    name: Allow users to skip the "send a test" page
+    status: 'in progress'
+  -
+    name: Background image control for email background
+    status: 'in progress'
+  -
+    name: Font face selection
+    status: 'in progress'
+  -
+    name: Highlight transactional tab
+    status: 'in progress'
+  -
+    name: Background image control per layout section
+    status: 'in progress'
+  -
+    name: Redesign the getting started page
+    status: 'in progress'
+  -
+    name: Font size control
+    status: 'in progress'

@@ -1,0 +1,32 @@
+name: FY16 September
+
+features:
+  -
+    name: More flexible master template
+    team: emailbuilder
+    status: complete
+  -
+    name: Campaign Monitor for Wordpress
+    team: automation
+    pm: mercers
+    status: complete
+  -
+    name: Campaign Monitor for Salesforce
+    team: automation
+    pm: mercers
+    status: complete
+  -
+    name: Reports at a segment level
+    team: contacts
+  -
+    name: Premier plan
+    team: growth
+  -
+    name: Reducing the price for subscriber tiers
+    team: growth
+  -
+    name: GetFeedback integration
+    team: emailbuilder
+  -
+    name: Add new marginal rates for credit purchases',
+    team: growth

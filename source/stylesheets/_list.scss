@@ -1,0 +1,52 @@
+.list {
+  clear: both;
+}
+
+.list__item {
+  font-size: 13px;
+  margin: 1em 0;
+  color: $color-white;
+
+  .tick {
+    position: relative;
+    float: right;
+    top: 2px;
+  }
+
+  .list__item__desc {
+    max-width: 250px;
+  }
+}
+
+.list__item--large {
+  font-size: 24px;
+  color: $color-grey-blue;
+  position: relative;
+  top: -8px;
+
+  .avatar {
+    position: relative;
+    top: 9px;
+    margin-right: 36px;
+  }
+
+  .tick {
+    top: 18px;
+  }
+
+  .list__item__desc {
+    max-width: 660px;
+  }
+}
+
+.list__item--done {
+  color: $color-white;
+}
+
+.list__item__desc {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

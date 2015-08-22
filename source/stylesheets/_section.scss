@@ -1,0 +1,26 @@
+.section {
+  float: left;
+}
+
+.section--main {
+  width: 800px;
+  min-height: 700px;
+  float: left;
+
+  .heading {
+    float: left;
+  }
+
+  .legend {
+    float: left;
+    position: relative;
+    top: 7px;
+    margin-left: 44px;
+  }
+}
+
+.section--secondary {
+  margin-left: 144px;
+  width: 266px;
+  min-height: 400px;
+}

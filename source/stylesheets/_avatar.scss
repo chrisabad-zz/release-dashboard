@@ -1,0 +1,48 @@
+.avatar {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 4px solid $color-white;
+  background: url(image_path('steven.jpg')) no-repeat;
+  background-size: 100% auto;
+}
+
+.avatar--legend {
+  background: none;
+  border-width: 2px;
+  width: 10px;
+  height: 10px;
+}
+
+.avatar--philo {
+  background-image: url(image_path('philo.jpg'));
+}
+
+.avatar--benh {
+  background-image: url(image_path('benh.jpg'));
+}
+
+.avatar--clarev {
+  background-image: url(image_path('clarev.jpg'));
+}
+
+.avatar--mercers {
+  background-image: url(image_path('mercers.jpg'));
+}
+
+.avatar--automation {
+  border-color: $color-automation;
+}
+
+.avatar--emailbuilder {
+  border-color: $color-emailbuilder;
+}
+
+.avatar--contacts {
+  border-color: $color-contacts;
+}
+
+.avatar--growth {
+  border-color: $color-growth;
+}
