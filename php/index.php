@@ -159,19 +159,19 @@
       <h2 class="heading heading--secondary heading--mb-large"><?php echo $data['currentCycle']['heading']; ?></h2>
       <ul class="legend">
         <li class="legend__item">
-          <span class="avatar avatar--automation avatar--legend"></span>
+          <span class="avatar avatar--automation avatar--legend  pulse"></span>
           <span>Automation</span>
         </li>
         <li class="legend__item">
-          <span class="avatar avatar--emailbuilder avatar--legend"></span>
+          <span class="avatar avatar--emailbuilder avatar--legend  pulse"></span>
           <span>Email Builder</span>
         </li>
         <li class="legend__item">
-          <span class="avatar avatar--contacts avatar--legend"></span>
+          <span class="avatar avatar--contacts avatar--legend  pulse"></span>
           <span>Contacts</span>
         </li>
         <li class="legend__item">
-          <span class="avatar avatar--growth avatar--legend"></span>
+          <span class="avatar avatar--growth avatar--legend  pulse"></span>
           <span>Growth</span>
         </li>
       </ul>
@@ -183,7 +183,7 @@
             <li class="list__item list__item--large <?php if($data['currentCycle']['releases'][$i]['done']) echo 'list__item--done'; ?>">
               <span class="avatar avatar--<?php echo $data['currentCycle']['releases'][$i]['team']; ?> avatar--<?php echo $data['currentCycle']['releases'][$i]['pm']; ?>"></span>
               <span class="list__item__desc"><?php echo $data['currentCycle']['releases'][$i]['description']; ?></span>
-              <span class="tick tick--large <?php if($data['currentCycle']['releases'][$i]['done']) echo 'tick--done'; ?>"></span>
+              <span class="tick tick--large <?php if($data['currentCycle']['releases'][$i]['done']) echo 'tick--done';?>"></span>
             </li>
             <?php
 
@@ -236,6 +236,7 @@
     </section>
   </main>
 
+  <script src="_assets/js/jquery-2.1.3.min.js"></script>
   <script src="_assets/js/Chart.min.js"></script>
   <script>
     var data = [
@@ -252,6 +253,36 @@
     var progressChart = new Chart(ctx).Doughnut(data, {
       segmentShowStroke: false,
     });
+
+
+
+    // setInterval(function () {
+    //     setRandomClass();
+    //     randomWait = Math.floor((Math.random() * 20000) + 2000);
+    // }, 2000);
+
+    function setRandomClass(items) {
+        var number = items.length;
+        var random = Math.floor((Math.random() * number));
+        items.eq(random).addClass("pulse");
+        setTimeout(function() {
+            items.eq(random).removeClass("pulse");
+        }, 2000);
+    }
+
+    (function loop() {
+        var rand = Math.round(Math.random() * (8000 - 200)) + 200;
+
+        var ul = $(".section--main .list");
+        var items = ul.find(".tick");
+
+        setTimeout(function() {
+            setRandomClass(items);
+            loop();
+        }, rand);
+    }());
+
+
   </script>
 </body>
 </html>
