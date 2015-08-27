@@ -47,3 +47,5 @@ We use [middleman-deploy](https://github.com/middleman-contrib/middleman-deploy)
 ```
 middleman deploy
 ```
+
+This will build the static files for the dashboard, and push them to the `gh-pages` branch. The deployed dashboard can be viewed at http://chrisabad.github.io/release-dashboard.
