@@ -4,13 +4,15 @@
 
 .list__item {
   font-size: 13px;
-  margin: 1em 0;
+  margin: 0 0 0.5em;
   color: $color-white;
+  top: -4px;
+  position: relative;
 
   .tick {
     position: relative;
     float: right;
-    top: 2px;
+    top: 5px;
   }
 
   .list__item__desc {
@@ -21,8 +23,8 @@
 .list__item--large {
   font-size: 24px;
   color: $color-grey-blue;
-  position: relative;
   top: -8px;
+  margin: 0.75em 0;
 
   .avatar {
     position: relative;
@@ -31,11 +33,12 @@
   }
 
   .tick {
-    top: 18px;
+    top: 17px;
   }
 
   .list__item__desc {
     max-width: 660px;
+    top: 3px;
   }
 }
 
@@ -49,4 +52,5 @@
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.5;
 }

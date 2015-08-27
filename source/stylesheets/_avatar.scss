@@ -6,11 +6,12 @@
   border: 4px solid $color-white;
   background: url(image_path('steven.jpg')) no-repeat;
   background-size: 100% auto;
+  position: relative;
 }
 
 .avatar--legend {
   background: none;
-  border-width: 2px;
+  border-width: 0px;
   width: 10px;
   height: 10px;
 }
@@ -32,17 +33,21 @@
 }
 
 .avatar--automation {
+  background-color: $color-automation;
   border-color: $color-automation;
 }
 
-.avatar--email-builder {
+.avatar--emailbuilder {
+  background-color: $color-emailbuilder;
   border-color: $color-emailbuilder;
 }
 
 .avatar--contacts {
+  background-color: $color-contacts;
   border-color: $color-contacts;
 }
 
 .avatar--growth {
+  background-color: $color-growth;
   border-color: $color-growth;
 }
