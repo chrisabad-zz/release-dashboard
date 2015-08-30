@@ -18,6 +18,13 @@
   .list__item__desc {
     max-width: 250px;
   }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
 }
 
 .list__item--large {
@@ -40,10 +47,24 @@
     max-width: 660px;
     top: 3px;
   }
+
+  a {
+    color: $color-grey-blue;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
 }
 
 .list__item--done {
   color: $color-white;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
 }
 
 .list__item__desc {

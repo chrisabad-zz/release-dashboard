@@ -8,28 +8,36 @@ features:
     name: More flexible master template
     team: emailbuilder
     status: complete
+    url: \#
   -
     name: Campaign Monitor for Wordpress
     team: automation
     pm: mercers
     status: complete
+    url: \#
   -
     name: Campaign Monitor for Salesforce
     team: automation
     pm: mercers
     status: complete
+    url: \#
   -
     name: Reports at a segment level
     team: contacts
+    url: \#
   -
     name: Premier plan
     team: growth
+    url: \#
   -
     name: Reducing the price for subscriber tiers
     team: growth
+    url: \#
   -
     name: GetFeedback integration
     team: email-builder
+    url: \#
   -
     name: Add new marginal rates for credit purchases
     team: growth
+    url: \#

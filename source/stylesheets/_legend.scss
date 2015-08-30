@@ -9,6 +9,13 @@
   float: left;
   margin-bottom: 0.8em;
 
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
   .avatar {
     margin-right: 10px;
   }

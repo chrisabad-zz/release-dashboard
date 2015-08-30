@@ -1,5 +1,9 @@
 name: FY16 October
 
 features:
-  - name: Export HTML
-  - name: Custom code in templates
+  -
+    name: Export HTML
+    url: \#
+  -
+    name: Custom code in templates
+    url: \#

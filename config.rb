@@ -73,6 +73,12 @@ helpers do
     end
   end
 
+  def item_status(feature_status, default)
+    if (default == 'complete' and feature_status != 'in progress') or (default == 'in progress' and feature_status == 'complete')
+      'list__item--done'
+    end
+  end
+
   # def days_left(current_release)
   #   (Date.parse(current_release.end.to_s) - DateTime.now).to_i
   # end
