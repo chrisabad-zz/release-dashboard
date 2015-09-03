@@ -5,29 +5,19 @@ end: 2015-09-25
 
 features:
   -
-    name: More flexible master template
-    team: emailbuilder
-    status: complete
-    url: \#
-  -
-    name: Campaign Monitor for Wordpress
-    team: automation
-    pm: mercers
+    name: Premier plan
+    team: growth
     status: complete
     url: \#
   -
     name: Campaign Monitor for Salesforce
     team: automation
     pm: mercers
-    status: complete
     url: \#
   -
-    name: Reports at a segment level
-    team: contacts
-    url: \#
-  -
-    name: Premier plan
-    team: growth
+    name: Campaign Monitor for Wordpress
+    team: automation
+    pm: mercers
     url: \#
   -
     name: Reducing the price for subscriber tiers
@@ -40,4 +30,44 @@ features:
   -
     name: Add new marginal rates for credit purchases
     team: growth
+    url: \#
+  -
+    name: 'Allow users to skip the "send a test" page'
+    team: growth
+    url: \#
+  -
+    name: Dynamic sender
+    team: automation
+    url: \#
+  -
+    name: Reporting by segment for campaigns
+    team: contacts
+    url: \#
+  -
+    name: Reducing the price for subscriber tiers
+    team: growth
+    url: \#
+  -
+    name: Button flexibility
+    team: email-builder
+    url: \#
+  -
+    name: Spacing customisation
+    team: email-builder
+    url: \#
+  -
+    name: Social sharing
+    team: email-builder
+    url: \#
+  -
+    name: Header flexibility
+    team: email-builder
+    url: \#
+  -
+    name: '"New feature" inline notifications'
+    team: email-builder
+    url: \#
+  -
+    name: Dynamic hero banner
+    team: email-builder
     url: \#

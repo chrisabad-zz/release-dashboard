@@ -2,7 +2,34 @@ name: FY16 October
 
 features:
   -
-    name: Export HTML
+    name: Redesign the getting started page
+    url: \#
+  -
+    name: Reporting by segment for automation
+    url: \#
+  -
+    name: Mobile-first email base template
+    url: \#
+  -
+    name: Cross-template style flexibility
+    url: \#
+  -
+    name: Inline feature tour
+    url: \#
+  -
+    name: 'Improved "preview" user flow'
+    url: \#
+  -
+    name: Updated UX content controls
+    url: \#
+  -
+    name: More flexible sidebar & local settings
+    url: \#
+  -
+    name: Image sizing and spacing
+    url: \#
+  -
+    name: Undo customisation
     url: \#
   -
     name: Custom code in templates

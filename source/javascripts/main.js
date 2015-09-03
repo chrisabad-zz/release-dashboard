@@ -13,8 +13,8 @@ element.innerHTML = daysUntil(date);
 
 // Drawing donut chart
 var data = [
-  { value: 100, color:"#19a9e5" },
-  { value: 45, color: "#4f545c" }
+  { value: 1, color:"#19a9e5" },
+  { value: 15, color: "#4f545c" }
 ];
 
 var ctx = document.getElementById('progress').getContext('2d');
