@@ -5,13 +5,14 @@
 
 .list--scroll {
   position: relative;
+  top: -20px;
 
   &:before, &:after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 100px;
     z-index: 1;
     pointer-events: none;
   }
@@ -28,11 +29,11 @@
 }
 
 .list--height100 {
-  max-height: 800px;
+  max-height: 660px;
 }
 
 .list--height50 {
-  max-height: 400px;
+  max-height: 270px;
   overflow: hidden;
 }
 

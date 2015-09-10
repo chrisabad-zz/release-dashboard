@@ -1,5 +1,4 @@
 .pulse {
-
   &:after {
     content: '';
     position: absolute;
@@ -11,59 +10,72 @@
     background: inherit;
     border-radius: 50%;
     z-index: -1;
-    -webkit-animation: pulserDot 10s linear infinite;
+    animation: pulserDot 10s linear infinite;
   }
 
   &.tick {
     &:after {
-      -webkit-animation: pulserDotFast 2s linear infinite;
+      animation: pulserDotFast 2s linear infinite;
     }
 
     &.tick--done:after {
       display: none;
     }
   }
-
 }
 
-@-webkit-keyframes pulserDot {
+@keyframes pulserDot {
   0% {
-    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 0;
   }
   80% {
-    -webkit-transform: scale(1);
+    transform: scale(1);
     opacity: 0;
   }
   85% {
-    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
     opacity: 0.8;
   }
   90% {
-    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 0.8;
   }
   100% {
-    -webkit-transform: scale(3);
+    transform: scale(3);
     opacity: 0;
   }
 }
 
-@-webkit-keyframes pulserDotFast {
+@keyframes pulserDotFast {
   0% {
-    -webkit-transform: scale(1);
+   transform: scale(1);
     opacity: 0;
   }
   40% {
-    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
     opacity: 0.8;
   }
   50% {
-    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 0.8;
   }
   100% {
-    -webkit-transform: scale(3.2);
+    transform: scale(3.2);
     opacity: 0;
   }
+}
+
+
+.js-scroll {
+  animation: movieCredits 86400s linear infinite;
+}
+
+@keyframes movieCredits {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-1000000px);
+    }
 }

@@ -45,3 +45,30 @@ function setRandomClass(items) {
        loop();
    }, rand);
 }());
+
+
+// Duplicate HTML by a certain amount
+function duplicateHTML(element, amount) {
+  var elementhtml = element.html();
+  var newhtml = elementhtml;
+
+  for(i = 0; i < amount; i++) {
+    newhtml += elementhtml;
+  }
+
+  element.html(newhtml);
+}
+
+$(function() {
+  // For each list--scroll we duplicate the HTML many times to do the looping
+  // (This is really dirty code, but fine for being displayed in TV internally)
+
+  $('.js-scroll').each(function() {
+    duplicateHTML($(this), 200);
+  });
+
+  // Reload everyday (86400000 ms = 24h)
+  setTimeout(function() {
+    location.reload();
+  }, 86400000);
+});
