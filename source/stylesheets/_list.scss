@@ -55,7 +55,7 @@
   }
 
   a {
-    color: $color-grey-blue;
+    color: $color-white;
     text-decoration: none;
     outline: none;
 
@@ -85,6 +85,10 @@
   .list__item__desc {
     max-width: 660px;
     top: 3px;
+  }
+
+  a {
+    color: $color-grey-blue;
   }
 }
 
