@@ -64,11 +64,11 @@ $(function() {
   // (This is really dirty code, but fine for being displayed in TV internally)
 
   $('.js-scroll').each(function() {
-    duplicateHTML($(this), 200);
+    duplicateHTML($(this), 300);
   });
 
-  // Reload everyday (86400000 ms = 24h)
+  // Reload every 12h(43200000 ms = 12h)
   setTimeout(function() {
     location.reload();
-  }, 86400000);
+  }, 43200000);
 });
