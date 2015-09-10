@@ -52,16 +52,12 @@
    transform: scale(1);
     opacity: 0;
   }
-  40% {
-    transform: scale(1.4);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0.8;
+  70% {
+    transform: scale(1.8);
+    opacity: 0.6;
   }
   100% {
-    transform: scale(3.2);
+    transform: scale(3.8);
     opacity: 0;
   }
 }
