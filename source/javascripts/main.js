@@ -80,17 +80,17 @@ endsDate.html(formatDate(date));
 // ===================
 function setRandomClass(items) {
    var number = items.length;
-   var random = Math.floor((Math.random() * number / 300));
+   var random = Math.floor((Math.random() * number));
    items.eq(random).addClass("pulse");
    setTimeout(function() {
        items.eq(random).removeClass("pulse");
-   }, 2000);
+   }, 4000);
 }
 
 (function loop() {
-   var rand = Math.round(Math.random() * (8000 - 200)) + 200;
+   var rand = Math.round(Math.random() * (4000 - 200)) + 200;
 
-   var ul = $(".section--main .list");
+   var ul = $(".list");
    var items = ul.find(".tick");
 
    setTimeout(function() {
@@ -98,3 +98,75 @@ function setRandomClass(items) {
        loop();
    }, rand);
 }());
+
+
+// ===================
+// Animating list
+// ===================
+function animateListIn() {
+  var elems = $(".list");
+  var elemsChild = $(".list li");
+  elemsChild.css({
+    transform: 'translateY(40px) scale(0.98)',
+    opacity: 0
+  });
+  setTimeout(function() {
+    var delay = 400;
+    elemsChild.each(function(){
+      animate({
+        el: $(this),
+        translateY: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 1000,
+        delay: delay,
+        easing: 'cubic-bezier(.13,.68,.36,1.1)'
+      });
+      delay += 50;
+    });
+  }, 2000);
+
+}
+
+function animateListOut() {
+  var delay = 0;
+  var elems = $(".list");
+  var elemsChild = $(".list li");
+  var countEl = elems.children().length - 1;
+
+  elemsChild.each(function(i){
+    animate({
+      el: $(this),
+      translateY: '0',
+      translateX: '0',
+      opacity: 0,
+      scale: 0.98,
+      duration: 1000,
+      delay: delay,
+      easing: 'cubic-bezier(.58,-0.14,.94,.2)',
+      complete: function() {
+        if(i >= countEl) {
+          setTimeout(function() {
+            animateListIn();
+          }, 1000);
+        }
+      }
+    });
+    delay += 50;
+  });
+}
+
+
+
+animateListIn();
+setTimeout(function() {
+    animateListOut();
+  window.setInterval(function(){
+  }, 60000);
+}, 60000);
+
+// Reloads page every 5min
+var rate = 60000 * 5;
+setTimeout(function() {
+  location.reload(true);
+}, rate);

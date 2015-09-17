@@ -5,9 +5,10 @@
 
 .list__item {
   font-size: 28px;
-  margin: 0.75em 4% 0.75em 0;
+  margin: 0 4% 1em 0;
   width: 48%;
   float: left;
+  transform-origin: 0 0;
 
   &:nth-child(even) {
     margin-right: 0;
@@ -56,10 +57,11 @@
       white-space: nowrap;
       line-height: 1.5;
       top: -2px;
+      max-width: 650px;
     }
 
   .list__item__tick {
     float: right;
     position: relative;
-    top: -3px;
+    top: -5px;
   }
