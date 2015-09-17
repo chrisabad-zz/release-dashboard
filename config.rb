@@ -58,15 +58,6 @@ end
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def pm(feature)
-    # data.teams["email-builder"]
-    if feature.pm
-      feature.pm
-    else
-      data.teams[feature.team]
-    end
-  end
-
   def tick_status(feature_status, default)
     if (default == 'complete' and feature_status != 'in progress') or (default == 'in progress' and feature_status == 'complete')
       'tick--done'
