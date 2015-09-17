@@ -37,10 +37,10 @@ features:
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/9991b099-dfd4-431f-a8bd-f826b7a2ab77
   -
     name: Improve the UX of the 2-step signup process
-    label: integrations
+    label: onboarding
     pm: clarev
     marketing: brigitted
-    team: integrations
+    team: growth
     url: https://app.wizeline.com/#/products/69f658fe-3dcf-4042-86e1-2916f2cf6dc4/features/show/db46ab93-72db-467c-bbc2-f0213ba43409
   -
     name: GetFeedback integration
