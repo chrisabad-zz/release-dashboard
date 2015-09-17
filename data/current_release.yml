@@ -1,69 +1,102 @@
 # Set the status as complete when the feature is complete.
 
-name: FY16 September
+name: September Release
 end: 2015-09-25
 
 features:
   -
     name: Premier plan
+    label: pricing & packaging
     team: growth
+    pm: neals
+    marketing: satejap
     status: complete
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/2eb7ed3f-3554-4a1a-8978-b59fd1a68e2f
   -
     name: Campaign Monitor for Salesforce
-    team: automation
+    label: integrations
+    team: integrations
     pm: mercers
+    marketing: satejap
+    status: complete
     url: http://campmon.com/wiki/display/dashboard/Campaign+Monitor+for+Salesforce+Launch
   -
     name: Campaign Monitor for Wordpress
-    team: automation
+    label: integrations
+    team: integrations
     pm: mercers
+    marketing: satejap
+    status: complete
     url: https://app.wizeline.com/#/products/4d7ed074-12f7-4bad-881f-885ffa754ae4/features/show/
   -
     name: Reducing the price for subscriber tiers
+    label: pricing & packaging
     team: growth
+    pm: neals
+    marketing: satejap
+    status: complete
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/8ca518bb-a928-4365-bb9f-4dde06fbf8cd
   -
     name: GetFeedback integration
+    label: email builder
     team: email-builder
+    pm: benh
+    marketing: brigitted
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/352708a2-1c1c-4c49-a668-cbddedca152a
   -
     name: Add new marginal rates for credit purchases
+    label: pricing & packaging
     team: growth
+    pm: neals
+    marketing: satejap
+    status: complete
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/2f554375-cbd9-40d1-a141-2022621f66a4
   -
     name: 'Allow users to skip the "send a test" page'
+    label: onboarding
     team: growth
+    pm: neals
+    marketing: brigitted
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/6fb93fa2-a982-4012-ba56-48f49c0e7f33
   -
     name: Dynamic sender
+    label: automation & journeys
     team: automation
+    pm: philo
+    marketing: satejap
     url: https://app.wizeline.com/#/products/4d7ed074-12f7-4bad-881f-885ffa754ae4/features/show/26787190-a82e-41cb-8472-22982710b584
   -
     name: Reporting by segment for campaigns
+    label: lists, contacts & segments
     team: contacts
+    pm: neals
+    marketing: satejap
     url: https://app.wizeline.com/#/products/69f658fe-3dcf-4042-86e1-2916f2cf6dc4/features/show/91decb51-9a66-4cf1-9079-f1cfea0340c1
   -
     name: Button flexibility
+    label: email builder
     team: email-builder
+    pm: benh
+    marketing: satejap
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/c69b6f78-264e-4e02-acdd-37621c8703d5
   -
     name: Spacing customisation
+    label: email builder
     team: email-builder
+    pm: benh
+    marketing: satejap
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/2949f2f0-ade1-45da-a6e9-f94db34c0543
   -
     name: Social sharing
+    label: email builder
     team: email-builder
+    pm: benh
+    marketing: satejap
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/838d44b1-f78a-4fc9-ab5b-1c7b07c70fd0
   -
     name: Header flexibility
+    label: email builder
     team: email-builder
+    pm: benh
+    marketing: brigitted
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/f244fb2a-bec2-44cc-8499-122a30448149
-  -
-    name: '"New feature" inline notifications'
-    team: email-builder
-    url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/d1b93cd2-927f-44a9-bc9b-451cbfcefea3
-  -
-    name: Dynamic hero banner
-    team: email-builder
-    url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/6a45aad8-e5cb-474e-8b92-ad8b14c55125

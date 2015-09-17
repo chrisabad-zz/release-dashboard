@@ -11,6 +11,34 @@ body {
 }
 
 .main {
+  width: 95%;
   max-width: 1720px;
   margin: 100px auto;
+}
+
+
+
+.color--automation {
+  border-color: $color-automation !important;
+  color: $color-automation !important;
+}
+
+.color--email-builder {
+  border-color: $color-emailbuilder !important;
+  color: $color-emailbuilder !important;
+}
+
+.color--contacts {
+  border-color: $color-contacts !important;
+  color: $color-contacts !important;
+}
+
+.color--growth {
+  border-color: $color-growth !important;
+  color: $color-growth !important;
+}
+
+.color--integrations {
+  border-color: $color-integration !important;
+  color: $color-integration !important;
 }

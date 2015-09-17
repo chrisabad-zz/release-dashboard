@@ -1,33 +1,86 @@
-// Setting date
-var daysUntil = function(date) {
+// ===================
+// Countdown days
+// ===================
+function daysUntil(dateInput) {
   var startDate = Date.now();
-  var endDate = Date.parse(date);
+  var endDate = Date.parse(dateInput);
   var diff = new Date(endDate - startDate);
-  var days = diff/1000/60/60/24;
-  return Math.ceil(days);
+  var days = Math.ceil(diff/1000/60/60/24);
+  if (days > 1) {
+    return days + ' days left';
+  }
+  else {
+    return days + ' day left';
+  }
 }
 
-var element = document.getElementById('countdown')
-var date = element.getAttribute('data-end-date');
-element.innerHTML = daysUntil(date);
+var countdown = $('#countdown');
+var date = countdown.data('end-date');
+countdown.html(daysUntil(date));
 
-// Drawing donut chart
-var data = [
-  { value: 1, color:"#19a9e5" },
-  { value: 15, color: "#4f545c" }
-];
 
-var ctx = document.getElementById('progress').getContext('2d');
-var progressChart = new Chart(ctx).Doughnut(data, { segmentShowStroke: false });
 
-// setInterval(function () {
-//     setRandomClass();
-//     randomWait = Math.floor((Math.random() * 20000) + 2000);
-// }, 2000);
+// ===================
+// Ends Date formatting
+// format: YYYY-MM-DD
+// ===================
+function formatDate(dateInput) {
+  var currentDate = new Date(dateInput);
+  var newDate = {
+    day: '',
+    date: '',
+    dateSuffix: 'th',
+    month: ''
+  }
+  var weekDays = [
+    'Sunday',
+    'Monday',
+    'Tuesday',
+    'Wednesday',
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ];
+  var months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ];
 
+  newDate['day'] = weekDays[currentDate.getDay()];
+  newDate['date'] = currentDate.getDate();
+  newDate['month'] = months[currentDate.getMonth()];
+
+  if (currentDate.getDate() == 1 || currentDate.getDate() == 21 || currentDate.getDate() == 31) newDate['dateSuffix'] = 'st';
+  if (currentDate.getDate() == 2 || currentDate.getDate() == 22) newDate['dateSuffix'] = 'nd';
+  if (currentDate.getDate() == 3 || currentDate.getDate() == 23) newDate['dateSuffix'] = 'rd';
+
+  var stringDateDisplayed = 'ends ' + newDate['day'] + ' ' + newDate['date'] + newDate['dateSuffix'] + ' ' + newDate['month'];
+
+  return stringDateDisplayed;
+}
+
+var endsDate = $('#endDate');
+var date = endsDate.data('end-date');
+endsDate.html(formatDate(date));
+
+
+
+// ===================
+// Pulsing
+// ===================
 function setRandomClass(items) {
    var number = items.length;
-   var random = Math.floor((Math.random() * number));
+   var random = Math.floor((Math.random() * number / 300));
    items.eq(random).addClass("pulse");
    setTimeout(function() {
        items.eq(random).removeClass("pulse");
@@ -45,30 +98,3 @@ function setRandomClass(items) {
        loop();
    }, rand);
 }());
-
-
-// Duplicate HTML by a certain amount
-function duplicateHTML(element, amount) {
-  var elementhtml = element.html();
-  var newhtml = elementhtml;
-
-  for(i = 0; i < amount; i++) {
-    newhtml += elementhtml;
-  }
-
-  element.html(newhtml);
-}
-
-$(function() {
-  // For each list--scroll we duplicate the HTML many times to do the looping
-  // (This is really dirty code, but fine for being displayed in TV internally)
-
-  $('.js-scroll').each(function() {
-    duplicateHTML($(this), 300);
-  });
-
-  // Reload every 12h(43200000 ms = 12h)
-  setTimeout(function() {
-    location.reload();
-  }, 43200000);
-});

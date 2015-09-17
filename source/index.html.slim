@@ -7,61 +7,31 @@ html lang="en"
 
   body
     main class="main"
-      h1 class="heading heading--primary heading--mb-large" Product Releases
-      section class="section section--main"
-        h2 class="heading heading--secondary heading--mb-large"
+      header class="header"
+        div class="deadline"
+          h2 class="heading heading--secondary" id="countdown" data-end-date=(data.current_release.end)
+          h3 class="heading heading--tertiary" id="endDate" data-end-date=(data.current_release.end)
+        h1 class="heading heading--primary heading--mb-large"
           = data.current_release.name
-        ul class="legend"
-          li class="legend__item"
-            span class="avatar avatar--automation avatar--legend pulse"
-            span
-              = link_to 'Automation', '#'
-          li class="legend__item"
-            span class="avatar avatar--email-builder avatar--legend pulse"
-            span
-             = link_to "Email Builder", "#"
-          li class="legend__item"
-            span class="avatar avatar--contacts avatar--legend pulse"
-            span
-              = link_to "Contacts", "#"
-          li class="legend__item"
-            span class="avatar avatar--growth avatar--legend pulse"
-            span
-              = link_to "Growth", "#"
-        ul class="list list--scroll list--height100"
-          div class="js-scroll"
-            - data.current_release.features.each do |feature|
-              li class=("list__item list__item--large #{item_status feature.status, 'in progress'}")
-                span class=("avatar avatar--#{feature.team} avatar--#{pm(feature)}")
-                span class="list__item__desc"
+
+      section
+        ul class="list"
+          - data.current_release.features.each do |feature|
+            li class=("list__item list__item--large #{item_status feature.status, 'in progress'}")
+              span class="list__item__avatars"
+                span class=("avatar color--#{feature.team} avatar--#{feature.pm}")
+                span class=("avatar color--#{feature.team} avatar--#{feature.marketing}")
+
+              span class="list__item__desc"
+                span class=("list__item__desc__label color--#{feature.team}")
+                  = feature.label
+                span class="list__item__desc__name"
                   = link_to feature.name, feature.url
+
+              span class="list__item__tick"
                 span class=("tick tick--large #{tick_status(feature.status, 'in progress')}")
-      section class="section section--secondary section--days"
-        h2 class="heading heading--secondary heading--mb-large" Days left
-        div class="countdown" id="countdown" data-end-date=(data.current_release.end)
-      section class="section section--secondary"
-        h2 class="heading heading--secondary heading--mb-large" Last Release
-        ul class="list list--scroll list--height50"
-          div class="js-scroll"
-            - data.previous_release.features.each do |feature|
-              li class=("list__item list__item #{item_status feature.status, 'complete'}")
-                span class="list__item__desc"
-                  = link_to feature.name, feature.url
-                span class=("tick #{tick_status(feature.status, 'complete')}")
-      section class="section section--secondary section--progress"
-        h2 class="heading heading--secondary heading--mb-large" Progress
-        canvas id="progress" class="progress"
-      section class="section section--secondary next-release"
-        h2 class="heading heading--secondary heading--mb-large" Next Release
-        ul class="list list--scroll list--height50"
-          div class="js-scroll"
-            - data.next_release.features.each do |feature|
-              li class="list__item"
-                span class="list__item__desc"
-                  = link_to feature.name, feature.url
-                span class="tick"
+
 
     = javascript_include_tag "jquery-2.1.3.min.js"
-    = javascript_include_tag "chart.min.js"
     = javascript_include_tag "date/date"
     = javascript_include_tag "main"

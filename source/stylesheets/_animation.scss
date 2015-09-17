@@ -61,17 +61,3 @@
     opacity: 0;
   }
 }
-
-
-.js-scroll {
-  animation: movieCredits 86400s linear infinite;
-}
-
-@keyframes movieCredits {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-1000000px);
-    }
-}

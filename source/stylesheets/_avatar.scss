@@ -3,10 +3,11 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 4px solid $color-white;
+  border: 2px solid $color-white;
   background: url(image_path('steven.jpg')) no-repeat;
   background-size: 100% auto;
   position: relative;
+  margin-right: 4px;
 }
 
 .avatar--legend {
@@ -36,22 +37,10 @@
   background-image: url(image_path('neals.jpg'));
 }
 
-.avatar--automation {
-  background-color: $color-automation;
-  border-color: $color-automation;
+.avatar--brigitted {
+  background-image: url(image_path('brigitted.jpg'));
 }
 
-.avatar--email-builder {
-  background-color: $color-emailbuilder;
-  border-color: $color-emailbuilder;
-}
-
-.avatar--contacts {
-  background-color: $color-contacts;
-  border-color: $color-contacts;
-}
-
-.avatar--growth {
-  background-color: $color-growth;
-  border-color: $color-growth;
+.avatar--satejap {
+  background-image: url(image_path('satejap.jpg'));
 }
