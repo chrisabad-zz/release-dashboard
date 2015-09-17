@@ -69,7 +69,7 @@ features:
     name: Reporting by segment for campaigns
     label: lists, contacts & segments
     team: contacts
-    pm: neals
+    pm: clarev
     marketing: satejap
     url: https://app.wizeline.com/#/products/69f658fe-3dcf-4042-86e1-2916f2cf6dc4/features/show/91decb51-9a66-4cf1-9079-f1cfea0340c1
   -
@@ -77,21 +77,21 @@ features:
     label: email builder
     team: email-builder
     pm: benh
-    marketing: satejap
+    marketing: brigitted
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/c69b6f78-264e-4e02-acdd-37621c8703d5
   -
     name: Spacing customisation
     label: email builder
     team: email-builder
     pm: benh
-    marketing: satejap
+    marketing: brigitted
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/2949f2f0-ade1-45da-a6e9-f94db34c0543
   -
     name: Social sharing
     label: email builder
     team: email-builder
     pm: benh
-    marketing: satejap
+    marketing: brigitted
     url: https://app.wizeline.com/#/products/934e407e-e7f3-4744-b18b-d728e9f9c0fe/features/show/838d44b1-f78a-4fc9-ab5b-1c7b07c70fd0
   -
     name: Header flexibility
