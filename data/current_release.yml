@@ -30,10 +30,10 @@ features:
     url: https://app.wizeline.com/#/products/4d7ed074-12f7-4bad-881f-885ffa754ae4/features/show/26787190-a82e-41cb-8472-22982710b584
   -
     name: Redesign the getting started page
-    label: integrations
+    label: onboarding
     pm: clarev
     marketing: brigitted
-    team: integrations
+    team: growth
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/9991b099-dfd4-431f-a8bd-f826b7a2ab77
   -
     name: Improve the UX of the 2-step signup process
