@@ -160,8 +160,8 @@ function animateListOut() {
 
 animateListIn();
 setTimeout(function() {
-    animateListOut();
   window.setInterval(function(){
+    animateListOut();
   }, 60000);
 }, 60000);
 
