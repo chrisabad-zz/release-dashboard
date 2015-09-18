@@ -11,7 +11,7 @@ body {
 }
 
 .main {
-  width: 95%;
+  width: 90%;
   max-width: 1720px;
   margin: 82px auto;
 }
@@ -42,3 +42,10 @@ body {
   border-color: $color-integration !important;
   color: $color-integration !important;
 }
+
+
+.color--pricing {
+  border-color: $color-pricing !important;
+  color: $color-pricing !important;
+}
+

@@ -10,7 +10,7 @@ features:
     pm: neals
     marketing: satejap
     status: complete
-    team: growth
+    team: pricing
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/2eb7ed3f-3554-4a1a-8978-b59fd1a68e2f
   -
     name: Campaign Monitor for Salesforce
@@ -54,7 +54,7 @@ features:
     label: pricing & packaging
     pm: neals
     marketing: satejap
-    team: growth
+    team: pricing
     url: https://app.wizeline.com/#/products/0685b9d3-59ec-4878-8f3b-14d608feeb03/features/show/2f554375-cbd9-40d1-a141-2022621f66a4
   -
     name: 'Allow users to skip the "send a test" page'

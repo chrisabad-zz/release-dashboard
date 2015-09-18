@@ -6,16 +6,28 @@
 .heading--primary {
   font-size: 154px;
   color: $color-white;
+
+  @media (max-width: 1600px) {
+    font-size: 119px;
+  }
 }
 
 .heading--secondary {
   font-size: 94px;
   color: $color-white;
+
+  @media (max-width: 1600px) {
+    font-size: 72px;
+  }
 }
 
 .heading--tertiary {
   font-size: 44px;
   color: $color-grey-blue;
+
+  @media (max-width: 1600px) {
+    font-size: 36px;
+  }
 }
 
 .heading--mb-large {
